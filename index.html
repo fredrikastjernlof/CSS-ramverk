@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS-ramverk | Laboration 1</title>
+</head>
+
+<body>
+
+  <header class="header-home">
+    <nav class="main-nav" aria-label="Huvudnavigation">
+      <a class="nav-brand" href="/">CSS-ramverk</a>
+
+      <button class="nav-toggle" type="button" aria-label="Visa eller dölj menyn" aria-expanded="false"
+        aria-controls="main-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="main-menu">
+        <li>
+          <a href="/" aria-current="page">Hem</a>
+        </li>
+        <li>
+          <a href="/bootstrap.html">Bootstrap</a>
+        </li>
+        <li>
+          <a href="/foundation.html">Foundation</a>
+        </li>
+        <li>
+          <a href="/bulma.html">Bulma</a>
+        </li>
+        <li>
+          <a href="/tailwind.html">Tailwind</a>
+        </li>
+        <li>
+          <a href="/publicering.html">Publicering</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h1>CSS-ramverk</h1>
+
+      <p class="lead">
+        En laboration där jag testar och jämför fyra olika
+        CSS-ramverk för att undersöka hur de fungerar
+        och vilka möjligheter de erbjuder.
+      </p>
+
+      <p>
+        Ett CSS-ramverk innehåller färdiga lösningar för att
+        underlätta arbetet med en webbplats utseende och layout.
+        Det kan handla om allt från gridsystem och responsiv
+        design till knappar, formulär och navigationsmenyer.
+      </p>
+
+      <p>
+        I den här laborationen har jag valt att arbeta med
+        Bootstrap, Foundation, Bulma och Tailwind CSS.
+        Målet är att få en uppfattning om deras olika
+        arbetssätt, styrkor och svagheter.
+      </p>
+    </section>
+
+    <section class="frameworks">
+      <h2>Ramverken jag har testat</h2>
+
+      <div class="framework-grid">
+
+        <article class="framework-card">
+          <h3>Bootstrap</h3>
+          <p>
+            Ett komponentbaserat ramverk med ett omfattande
+            utbud av färdiga komponenter, hjälpklasser
+            och ett flexibelt gridsystem.
+          </p>
+          <a href="/bootstrap.html">Läs om Bootstrap</a>
+        </article>
+
+        <article class="framework-card">
+          <h3>Foundation</h3>
+          <p>
+            Ett responsivt ramverk med flexibla
+            layoutmöjligheter och stort utrymme
+            för egna anpassningar.
+          </p>
+          <a href="/foundation.html">Läs om Foundation</a>
+        </article>
+
+        <article class="framework-card">
+          <h3>Bulma</h3>
+          <p>
+            Ett CSS-ramverk med färdiga komponenter
+            och ett lättillgängligt arbetssätt
+            som påminner om Bootstrap.
+          </p>
+          <a href="/bulma.html">Läs om Bulma</a>
+        </article>
+
+        <article class="framework-card">
+          <h3>Tailwind CSS</h3>
+          <p>
+            Ett utility-first-ramverk där designen
+            byggs upp med små CSS-klasser och
+            stor frihet att styra utseendet.
+          </p>
+          <a href="/tailwind.html">Läs om Tailwind</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="reflection">
+      <h2>Om min utvärdering</h2>
+
+      <p>
+        Utvärderingarna bygger på mina första erfarenheter
+        av ramverken och hur enkelt det har varit att använda
+        deras färdiga komponenter och CSS-klasser.
+      </p>
+
+      <p>
+        Jag är medveten om att ramverken erbjuder betydligt
+        fler möjligheter till anpassning, exempelvis genom
+        Sass/SCSS. I den här laborationen har jag däremot
+        valt att fokusera på grunderna och arbeta med
+        ramverkens färdiga CSS-funktioner.
+      </p>
+
+      <p>
+        Bedömningarna speglar därför framför allt hur jag
+        upplevt ramverken som ny användare, snarare än
+        deras fulla potential.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Fredrika Stjernlöf</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>

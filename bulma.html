@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="sv" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-ramverk | Bulma</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar is-success" aria-label="Huvudnavigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-5" href="/">
+                        <strong>CSS-ramverk</strong>
+                    </a>
+
+                    <button class="navbar-burger has-text-black" type="button" aria-label="Visa eller dölj menyn"
+                        aria-expanded="false" aria-controls="bulma-menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-menu" id="bulma-menu">
+                    <ul class="navbar-end">
+                        <li class="navbar-item">
+                            <a class="has-text-grey-darker" href="/">Hem</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="has-text-grey-darker" href="/bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="has-text-grey-darker" href="/foundation.html">Foundation</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="is-active has-text-grey-darker has-text-weight-bold" href="/bulma.html"
+                                aria-current="page">Bulma</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="has-text-grey-darker" href="/tailwind.html">Tailwind</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="has-text-grey-darker" href="/publicering.html">Publicering</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container px-4 py-6">
+
+        <h1 class="title">Bulma</h1>
+
+        <p>
+            Bulma är ett responsivt CSS-ramverk som bygger på Flexbox
+            och erbjuder färdiga komponenter för bland annat navigation,
+            formulär, tabeller och innehållsbehållare.
+            Ramverket använder klasser direkt i HTML för att styla
+            webbplatsens olika delar.
+        </p>
+
+        <p class="mt-3">
+            Bulma påminner på många sätt om Bootstrap, med ett liknande
+            arbetssätt och flera färdiga komponenter. Till skillnad från
+            Bootstrap innehåller Bulma däremot inget eget JavaScript,
+            vilket innebär att interaktiva funktioner kan behöva
+            kompletteras med egen kod.
+        </p>
+
+        <p class="mt-3">
+            Läs mer på
+            <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">
+                Bulmas officiella webbplats
+            </a>.
+        </p>
+
+
+
+        <section class="mt-5">
+            <h2 class="title is-4">Fördelar och nackdelar</h2>
+
+            <div class="columns">
+                <div class="column is-flex">
+                    <div class="box is-flex-grow-1">
+                        <h3 class="title is-5">Fördelar</h3>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <strong>Bekant arbetssätt:</strong>
+                                    Bulma påminner mycket om Bootstrap, vilket gjorde
+                                    det lättare att komma igång efter att ha arbetat
+                                    med det ramverket.
+                                </li>
+                                <li>
+                                    <strong>Färdiga komponenter:</strong>
+                                    Navigation, tabeller, formulär och innehållsbehållare
+                                    får snabbt ett enhetligt och genomarbetat utseende.
+                                </li>
+                                <li>
+                                    <strong>Smidigt kolumnsystem:</strong>
+                                    Enkelt att skapa responsiva layouter utan
+                                    särskilt mycket extra arbete.
+                                </li>
+                                <li>
+                                    <strong>Tilltalande standarddesign:</strong>
+                                    Jag uppskattar bland annat Box-komponenten,
+                                    som ger ett snyggt, lite mjukare resultat med väldigt lite kod.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-flex">
+                    <div class="box is-flex-grow-1">
+                        <h3 class="title is-5">Nackdelar</h3>
+
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <strong>Kräver eget JavaScript:</strong>
+                                    Bulma innehåller ingen inbyggd JavaScript-funktionalitet,
+                                    så exempelvis den responsiva navigationsmenyn
+                                    behöver hanteras separat.
+                                </li>
+                                <li>
+                                    <strong>Lite pyssel med navigationen:</strong>
+                                    Det tog en stund att få menystrukturen,
+                                    färgerna och hamburgermenyn att fungera
+                                    och se ut som jag ville.
+                                </li>
+                                <li>
+                                    <strong>Många klasser att lära sig:</strong>
+                                    Även om arbetssättet kändes bekant behövde
+                                    jag sätta mig in i Bulmas egna klassnamn och struktur.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="mt-6">
+            <h2 class="title is-4">Utvärdering av Bulma</h2>
+
+            <div class="table-container">
+                <table class="table is-striped is-fullwidth is-hoverable">
+                    <thead>
+                        <tr class="is-success">
+                            <th scope="col">Funktion</th>
+                            <th scope="col">Betyg</th>
+                            <th scope="col">Svårighetsgrad</th>
+                            <th scope="col">Kommentar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Navigation</td>
+                            <td>4/5</td>
+                            <td>Medel</td>
+                            <td>Snygg komponent, men hamburgermenyn kräver egen JavaScript.</td>
+                        </tr>
+                        <tr>
+                            <td>Kolumnsystem</td>
+                            <td>5/5</td>
+                            <td>Lätt</td>
+                            <td>Enkelt att skapa responsiv layout med få klasser.</td>
+                        </tr>
+                        <tr>
+                            <td>Box</td>
+                            <td>5/5</td>
+                            <td>Lätt</td>
+                            <td>Snygg innehållsbehållare som knappt behöver anpassas, gillar den mjuka stilen.</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeller</td>
+                            <td>4/5</td>
+                            <td>Lätt</td>
+                            <td>Färdig styling gör arbetet enkelt, men mobilvisningen kräver sidoscrollning.</td>
+                        </tr>
+                        <tr>
+                            <td>Dokumentation</td>
+                            <td>4/5</td>
+                            <td>Lätt</td>
+                            <td>Tydliga exempel, lätt att komma igång.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section class="mt-6">
+            <h2 class="title is-4">Lämna en utvärdering</h2>
+
+            <form>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label" for="funktion">Funktion</label>
+                            <div class="control">
+                                <input class="input" type="text" id="funktion" name="funktion"
+                                    placeholder="Exempelvis navigation" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="field">
+                            <label class="label" for="betyg">Betyg</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select id="betyg" name="betyg" required>
+                                        <option value="">Välj betyg</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="svarighetsgrad">Svårighetsgrad</label>
+                    <div class="control">
+                        <div class="select is-fullwidth">
+                            <select id="svarighetsgrad" name="svarighetsgrad" required>
+                                <option value="">Välj svårighetsgrad</option>
+                                <option value="Lätt">Lätt</option>
+                                <option value="Medel">Medel</option>
+                                <option value="Svår">Svår</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="kommentar">Kommentar</label>
+                    <div class="control">
+                        <textarea class="textarea" id="kommentar" name="kommentar" rows="4"
+                            placeholder="Beskriv din upplevelse.." required></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" name="bekraftelse" required>
+                            Jag bekräftar att uppgifterna stämmer.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-success" type="submit">
+                            Skicka utvärdering
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer py-6">
+        <div class="content has-text-centered">
+            <p> &copy; 2026 Fredrika Stjernlöf</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/bulma.js"></script>
+
+</body>
+
+</html>

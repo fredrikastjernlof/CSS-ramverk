@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-ramverk | Foundation</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="grid-container">
+
+            <div class="title-bar" data-responsive-toggle="foundation-menu" data-hide-for="large">
+                <div class="title-bar-left">
+                    <a href="/">CSS-ramverk</a>
+                </div>
+                <div class="title-bar-right">
+                    <button class="menu-icon" type="button" data-toggle="foundation-menu"
+                        aria-label="Visa eller dölj menyn">
+                    </button>
+                </div>
+            </div>
+
+            <div class="top-bar" id="foundation-menu">
+                <div class="top-bar-left show-for-large">
+                    <a href="/">CSS-ramverk</a>
+                </div>
+                <div class="top-bar-right">
+                    <nav aria-label="Huvudnavigation">
+                        <ul class="vertical large-horizontal menu">
+                            <li><a href="/">Hem</a></li>
+                            <li><a href="/bootstrap.html">Bootstrap</a></li>
+                            <li class="is-active">
+                                <a href="/foundation.html" aria-current="page">Foundation</a>
+                            </li>
+                            <li><a href="/bulma.html">Bulma</a></li>
+                            <li><a href="/tailwind.html">Tailwind</a></li>
+                            <li><a href="/publicering.html">Publicering</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="grid-container">
+
+        <h1 class="h2">Foundation</h1>
+
+        <p>
+            Foundation är ett responsivt CSS-ramverk som innehåller bland annat
+            ett gridsystem, navigationskomponenter, formulär och knappar.
+            Ramverket bygger på ett mobile first-tänk och ger utvecklaren
+            möjlighet att anpassa både layout och utseende efter egna behov.
+        </p>
+
+        <p>
+            Foundation erbjuder färdiga komponenter, men ger också stort
+            utrymme för egen styling och anpassning.
+        </p>
+
+        <p>
+            Läs mer på
+            <a href="https://get.foundation/" target="_blank" rel="noopener noreferrer">
+                Foundations officiella webbplats
+            </a>.
+        </p>
+
+
+
+        <section>
+            <h2 class="h3">Fördelar och nackdelar</h2>
+
+            <div class="grid-x grid-margin-x align-stretch">
+                <div class="cell medium-6">
+                    <div class="callout" style="height: 100%;">
+                        <h3 class="h4">Fördelar</h3>
+
+                        <ul>
+                            <li>
+                                <strong>Flexibelt gridsystem:</strong>
+                                Enkelt att skapa responsiva layouter med hjälp
+                                av rader, kolumner och brytpunkter.
+                            </li>
+                            <li>
+                                <strong>Stor frihet att anpassa:</strong>
+                                Ramverket ger en bra grund för den som vill
+                                skapa en egen design och ha större kontroll
+                                över utseendet.
+                            </li>
+                            <li>
+                                <strong>Responsiva tabeller:</strong>
+                                Stack-funktionen är en riktig favorit! Den gör att tabellens
+                                innehåll staplas på mindre skärmar i stället för att kräva
+                                horisontell scrollning. En enkel och smidig lösning som
+                                faktiskt får mig att vilja använda Foundation igen.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cell medium-6">
+                    <div class="callout" style="height: 100%;">
+                        <h3 class="h4">Nackdelar</h3>
+
+                        <ul>
+                            <li>
+                                <strong>Begränsad färdig styling:</strong>
+                                Jämfört med t.ex. Bootstrap upplevde jag att
+                                Foundation erbjöd betydligt färre enkla
+                                möjligheter att styla komponenterna direkt
+                                med klasser.
+                            </li>
+                            <li>
+                                <strong>Stort behov av egen CSS:</strong>
+                                Jag behövde själv anpassa bland annat
+                                navigation, färger och andra detaljer
+                                för att få det utseende jag ville ha.
+                            </li>
+                            <li>
+                                <strong>Mindre smidigt för den här uppgiften:</strong>
+                                Eftersom målet var att använda ramverkets
+                                egna stylingmöjligheter blev det frustrerande
+                                att behöva komplettera med så mycket egen CSS.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2 class="h3">Utvärdering av Foundation</h2>
+
+            <div>
+                <table class="stack hover">
+                    <thead>
+                        <tr class="table-head">
+                            <th scope="col">Funktion</th>
+                            <th scope="col">Betyg</th>
+                            <th scope="col">Svårighetsgrad</th>
+                            <th scope="col">Kommentar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Navigation</td>
+                            <td>3/5</td>
+                            <td>Medel</td>
+                            <td>Fungerar responsivt, men krävde en hel del egen anpassning.</td>
+                        </tr>
+                        <tr>
+                            <td>Gridsystem</td>
+                            <td>5/5</td>
+                            <td>Medel</td>
+                            <td>Flexibelt och användbart när man förstår strukturen.</td>
+                        </tr>
+                        <tr>
+                            <td>Callout</td>
+                            <td>4/5</td>
+                            <td>Lätt</td>
+                            <td>Enkelt sätt att rama in innehåll, men ganska begränsat utseende.</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeller</td>
+                            <td>5/5</td>
+                            <td>Lätt</td>
+                            <td>Stack-funktionen gör att tabellen staplas på mindre skärmar - mycket smidigt.</td>
+                        </tr>
+                        <tr>
+                            <td>Styling</td>
+                            <td>2/5</td>
+                            <td>Svår</td>
+                            <td>Saknade enkla hjälpklasser och fick ofta skriva egen CSS.</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+
+
+        <section>
+            <h2 class="h3">Lägg till en utvärdering</h2>
+
+            <form>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-6">
+                        <label for="funktion">Funktion
+                            <input type="text" id="funktion" name="funktion" placeholder="Exempelvis navigation"
+                                required>
+                        </label>
+                    </div>
+
+                    <div class="cell medium-6">
+                        <label for="betyg">Betyg
+                            <select id="betyg" name="betyg" required>
+                                <option value="" disabled selected>Välj betyg</option>
+                                <option value="1">1/5</option>
+                                <option value="2">2/5</option>
+                                <option value="3">3/5</option>
+                                <option value="4">4/5</option>
+                                <option value="5">5/5</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="cell">
+                        <label for="svarighetsgrad">Svårighetsgrad
+                            <select id="svarighetsgrad" name="svarighetsgrad" required>
+                                <option value="" disabled selected>Välj svårighetsgrad</option>
+                                <option value="Lätt">Lätt</option>
+                                <option value="Medel">Medel</option>
+                                <option value="Svår">Svår</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="cell">
+                        <label for="kommentar">Kommentar
+                            <textarea id="kommentar" name="kommentar" rows="4" placeholder="Beskriv din upplevelse.."
+                                required></textarea>
+                        </label>
+                    </div>
+
+                    <div class="cell">
+                        <input type="checkbox" id="bekrafta" name="bekrafta" required>
+                        <label for="bekrafta">Jag bekräftar min utvärdering.</label>
+                    </div>
+
+                    <div class="cell">
+                        <button type="submit" class="button warning">
+                            Skicka utvärdering
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="grid-container">
+        <div class="grid-x align-center text-center">
+            <div class="cell">
+                <p> &copy; 2026 Fredrika Stjernlöf</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/foundation.js"></script>
+</body>
+
+</html>

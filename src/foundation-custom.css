@@ -1,0 +1,94 @@
+header {
+    background-color: #ffae00;
+}
+
+.title-bar {
+    background-color: #ffae00;
+}
+
+.title-bar a {
+    color: #212529;
+}
+
+.top-bar,
+.top-bar ul {
+    background-color: transparent;
+}
+
+.top-bar a {
+    color: #212529;
+}
+
+.top-bar-left a,
+.title-bar a {
+    font-size: 1.25rem;
+}
+
+.menu .is-active>a {
+    background-color: transparent;
+    color: #212529;
+    font-weight: bold;
+}
+
+.top-bar nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.menu-icon {
+    width: 42px;
+    height: 36px;
+    border: 1px solid #212529;
+    border-radius: 6px;
+    padding: 0;
+}
+
+.menu-icon::after {
+    top: 9px;
+    left: 8px;
+    width: 24px;
+    background: #212529;
+    box-shadow:
+        0 7px 0 #212529,
+        0 14px 0 #212529;
+}
+
+@media screen and (max-width: 1023px) {
+    .top-bar-right {
+        width: 100%;
+        text-align: left;
+    }
+
+    .top-bar-right .menu {
+        align-items: flex-start;
+    }
+}
+
+main {
+    padding-top: 3rem;
+}
+
+main>section {
+    margin-top: 3rem;
+}
+
+.table-head {
+    background-color: #ffae00;
+}
+
+input[type="text"],
+select,
+textarea {
+    border: 1px solid #767676;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #767676;
+    opacity: 1;
+}
+
+footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
