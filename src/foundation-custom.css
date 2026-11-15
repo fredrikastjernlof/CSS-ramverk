@@ -64,6 +64,26 @@ header {
     }
 }
 
+main h1.h2,
+main h2.h3,
+main h3.h4 {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 639px) {
+    main h1.h2 {
+        font-size: 2rem;
+    }
+
+    main h2.h3 {
+        font-size: 1.6rem;
+    }
+
+    main h3.h4 {
+        font-size: 1.3rem;
+    }
+}
+
 main {
     padding-top: 3rem;
 }
