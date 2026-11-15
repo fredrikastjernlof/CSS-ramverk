@@ -42,15 +42,8 @@
             <h1>Publicering med Cloudflare Pages</h1>
 
             <p class="lead">
-                I den här delen av laborationen ska jag publicera
-                min webbplats med hjälp av Cloudflare Pages och
-                utvärdera hur tjänsten fungerar.
-            </p>
-
-            <p>
-                Webbplatsen är byggd med Vite och innehåller
-                fyra olika CSS-ramverk. Publiceringen ska ske
-                via GitHub, utan att använda FTP eller SFTP.
+                För att få ut min laboration på nätet valde jag att testa Cloudflare Pages. Jag har tidigare publicerat
+                webbplatser på lite olika sätt, bl.a studenter.miun.se, netlify, render och eget webbhotell, men Cloudflare är nytt för mig.
             </p>
         </section>
 
@@ -58,9 +51,16 @@
             <h2>Om Cloudflare Pages</h2>
 
             <p>
-                Här kommer en beskrivning av plattformen,
-                hur den fungerar och vilka typer av
-                webbplatser den kan användas för.
+                Cloudflare Pages är en tjänst för att publicera webbplatser, framför allt statiska sidor och
+                frontend-projekt. Den kan kopplas till GitHub eller GitLab, så att webbplatsen byggs och uppdateras
+                automatiskt när man skickar upp ändringar i sin kod.
+            </p>
+
+            <p>
+                Mer information finns i
+                <a href="https://developers.cloudflare.com/pages/" target="_blank" rel="noopener noreferrer">
+                    Cloudflares dokumentation
+                </a>.
             </p>
         </section>
 
@@ -68,10 +68,21 @@
             <h2>Teknikstöd och kostnader</h2>
 
             <p>
-                Här beskriver jag vilka tekniker och
-                programmeringsspråk plattformen stöder,
-                vilka begränsningar som finns och
-                vad tjänsten kostar.
+                Cloudflare Pages fungerar med HTML, CSS och JavaScript och kan även användas med exempelvis React, Vue
+                och Astro. För den som behöver köra kod på serversidan finns stöd för JavaScript och TypeScript genom
+                Pages Functions.
+            </p>
+
+            <p>
+                Det finns en gratisnivå med upp till 500 byggen per månad, vilket är mer än tillräckligt för mitt lilla
+                projekt. Det finns också begränsningar för bland annat filstorlek och antal filer, men inget som
+                påverkade mig.
+            </p>
+
+            <p>
+                Publiceringen kostade mig alltså ingenting. Jag fick en adress som slutar på pages.dev, även om jag inte
+                riktigt uppfattade om jag kunde påverka namnet själv. Det går också att koppla en egen domän om man
+                vill.
             </p>
         </section>
 
@@ -79,9 +90,29 @@
             <h2>Så gick publiceringen till</h2>
 
             <p>
-                Här beskriver jag arbetsgången från
-                GitHub-repository till en publicerad
-                webbplats på Cloudflare Pages.
+                Jag började med att kontrollera att webbplatsen gick att bygga med Vite. Sedan skapade jag ett
+                repository på GitHub och laddade upp projektet dit.
+            </p>
+
+            <p>
+                Därefter var det dags för Cloudflare. Jag loggade in med GitHub och kom igång direkt. Så långt var allt
+                enkelt.
+            </p>
+
+            <p>
+                Sedan skulle jag bara hitta var man faktiskt publicerade en webbplats.
+            </p>
+
+            <p>
+                Det visade sig vara lättare sagt än gjort. Jag hamnade först under Workers och letade efter
+                inställningar som inte fanns där. Till slut hittade jag länken till Pages, lite undangömd längre ner på
+                sidan. Den hade gärna fått vara betydligt tydligare.
+            </p>
+
+            <p>
+                Men när jag väl kom rätt var det inga konstigheter. Jag valde mitt GitHub-repository, angav npm run
+                build som byggkommando och dist som mapp för de färdiga filerna. Sedan tog Cloudflare hand om resten och
+                webbplatsen var publicerad.
             </p>
         </section>
 
@@ -92,18 +123,23 @@
 
                 <article class="publish-card">
                     <h3>Fördelar</h3>
-                    <p>
-                        Här sammanfattar jag vad som fungerade
-                        bra med plattformen.
-                    </p>
+                    <ul>
+                        <li>Gratisnivån räcker gott för mindre projekt.</li>
+                        <li>Enkelt att koppla till GitHub.</li>
+                        <li>Webbplatsen byggs och publiceras automatiskt.</li>
+                        <li>Inga filer behöver laddas upp med FTP eller SFTP.</li>
+                        <li>Stöd för flera olika frontend-tekniker.</li>
+                    </ul>
                 </article>
 
                 <article class="publish-card">
                     <h3>Nackdelar</h3>
-                    <p>
-                        Här sammanfattar jag eventuella
-                        begränsningar eller svårigheter.
-                    </p>
+                    <ul>
+                        <li>Jag tyckte att Pages var onödigt svårt att hitta.</li>
+                        <li>Det var lätt att hamna under Workers av misstag.</li>
+                        <li>Jag uppfattade inte om det gick att välja adressen själv.</li>
+                        <li>Gratisnivån har vissa begränsningar, även om de inte påverkar mitt lilla projekt.</li>
+                    </ul>
                 </article>
 
             </div>
@@ -113,9 +149,14 @@
             <h2>Min utvärdering</h2>
 
             <p>
-                Här sammanfattar jag min upplevelse av
-                Cloudflare Pages och om jag skulle
-                välja tjänsten igen.
+                Bortsett från den lilla skattjakten efter Pages var det här faktiskt väldigt enkelt. Jag behövde inte
+                hålla på med några krångliga inställningar och när jag väl hittade rätt fungerade publiceringen utan
+                problem.
+            </p>
+
+            <p>
+                Så ja, Cloudflare Pages får absolut godkänt. Gränssnittet kunde ha varit lite tydligare, men själva
+                publiceringen har jag inte mycket att klaga på.
             </p>
         </section>
 
